@@ -68,6 +68,7 @@ Then send `out.txt` as the payload to the model in place of the original.
   most recent user turn. This is why you pass the raw data file directly.
 - Token counts use the `claude-sonnet-4-5` tokenizer for sizing; savings ratios
   are essentially model-agnostic.
-- This skill is scoped to structured-data compression. Wrapping the coding agent
-  itself (`headroom wrap claude|codex`) is a separate setup and intentionally
-  out of scope here.
+- This skill's helper is scoped to structured-data compression. Wrapping the
+  coding agent itself (`headroom wrap/init claude|codex`) is a separate, optional
+  integration documented in `agent-wrap.md` — run that on your local machine, not
+  in a sandboxed container.
